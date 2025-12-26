@@ -489,9 +489,9 @@ const VisitForm: React.FC<VisitFormProps> = ({ onSave, onCancel, user, schoolsLi
                 label={`Tanda Tangan Pengawas (${user.nama_pengawas})`} 
                 onSave={(sig) => setFormData({...formData, signatureSupervisor: sig})} 
                />
-               <SignaturePad 
-                label={`Tanda Tangan Kepala Sekolah (${formData.principalName || 'Kepala Sekolah'})`} 
-                onSave={(sig) => setFormData({...formData, signaturePrincipal: sig})} 
+               <SignaturePad
+                label={`Tanda Tangan Kepala Sekolah (${formData.principalName || 'Kepala Sekolah ' + formData.schoolName})`}
+                onSave={(sig) => setFormData({...formData, signaturePrincipal: sig})}
                />
             </div>
           </div>
