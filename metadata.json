@@ -1,0 +1,8 @@
+{
+  "name": "SIAP-KUPAS",
+  "description": "Aplikasi supervisi pengawas sekolah berbasis empati dan pendampingan, dirancang untuk transformasi budaya sekolah melalui kepemimpinan transformatif.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
